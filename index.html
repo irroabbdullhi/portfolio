@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdullahi Osman Ali — Creative Designer & Digital Professional</title>
+  <meta name="description" content="Portfolio of Abdullahi Osman Ali — Graphic Designer, Content Creator, Video Editor, Teacher & Mobile Phone Repair Technician. I help businesses grow through creative design and digital expertise." />
+  <meta name="keywords" content="Abdullahi Osman Ali, Graphic Designer, Content Creator, Video Editor, Teacher, Mobile Phone Repair, Brand Identity, Social Media Designer, Freelancer" />
+  <meta name="author" content="Abdullahi Osman Ali" />
+  <meta property="og:title" content="Abdullahi Osman Ali — Creative Designer & Digital Professional" />
+  <meta property="og:description" content="I help businesses and individuals grow through creative design, engaging content, professional video editing, teaching, and mobile device repair." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated Background Canvas -->
+  <canvas id="bgCanvas" aria-hidden="true"></canvas>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Abdullahi Osman Ali - Home">
+        <span class="logo-icon" aria-hidden="true">A</span>
+        <span class="logo-text">Abdullahi<span class="logo-accent">.</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#hero" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta" id="nav-hire-btn" aria-label="Hire Abdullahi">Hire Me</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+      <ul role="list">
+        <li><a href="#hero" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#portfolio" class="mobile-link">Portfolio</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="hero" aria-label="Hero section">
+
+      <!-- Floating Decorative Orbs -->
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+      <div class="orb orb-4" aria-hidden="true"></div>
+
+      <!-- Floating Creative Icons -->
+      <div class="floating-icons" aria-hidden="true">
+        <div class="float-icon fi-1" title="Design">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="float-icon fi-2" title="Video">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+        </div>
+        <div class="float-icon fi-3" title="Photo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        </div>
+        <div class="float-icon fi-4" title="Code">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="float-icon fi-5" title="Palette">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8c0 2.21-1.79 4-4 4-.83 0-1.59-.26-2.22-.68A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10H12V8z"/></svg>
+        </div>
+        <div class="float-icon fi-6" title="Phone">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <div class="float-icon fi-7" title="Brand">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="float-icon fi-8" title="Teach">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+
+        <!-- LEFT: Text Side -->
+        <div class="hero-text" id="hero-text">
+
+          <!-- Status Badge -->
+          <div class="status-badge" id="status-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for Freelance Work</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="hero-headline" id="hero-headline">
+            <span class="headline-greeting">Hi, I'm</span>
+            <span class="headline-name">Abdullahi<br><span class="name-last">Osman Ali</span></span>
+          </h1>
+
+          <!-- Typing Effect Subtitle -->
+          <div class="hero-subtitle" id="hero-subtitle" aria-live="polite">
+            <span class="subtitle-static">Creative </span>
+            <span class="typing-wrapper">
+              <span class="typing-text" id="typingText" aria-label="Job title rotating display"></span>
+              <span class="typing-cursor" aria-hidden="true">|</span>
+            </span>
+          </div>
+
+          <!-- Intro Paragraph -->
+          <p class="hero-intro" id="hero-intro">
+            I help businesses and individuals grow through <strong>creative design</strong>, engaging content, professional <strong>video editing</strong>, teaching, and mobile device repair.
+          </p>
+
+          <!-- Skills Badges -->
+          <div class="skills-grid" id="skills-grid" role="list" aria-label="Professional skills">
+            <div class="skill-badge badge-blue" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+              Graphic Designer
+            </div>
+            <div class="skill-badge badge-purple" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M15 10l4.553-2.276A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>
+              Content Creator
+            </div>
+            <div class="skill-badge badge-cyan" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              Video Editor
+            </div>
+            <div class="skill-badge badge-blue" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              Teacher
+            </div>
+            <div class="skill-badge badge-purple" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              Phone Repair Tech
+            </div>
+            <div class="skill-badge badge-cyan" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              Social Media Designer
+            </div>
+            <div class="skill-badge badge-blue" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              Brand Identity Designer
+            </div>
+            <div class="skill-badge badge-purple" role="listitem">
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/><line x1="20" y1="10" x2="22" y2="10"/><line x1="21" y1="9" x2="21" y2="11"/></svg>
+              Freelancer
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-buttons" id="hero-buttons">
+            <a href="#portfolio" class="btn btn-primary" id="btn-portfolio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              View Portfolio
+            </a>
+            <a href="#" class="btn btn-secondary" id="btn-cv" aria-label="Download CV">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-ghost" id="btn-contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+          <!-- About Card -->
+          <div class="about-card" id="about-card">
+            <div class="about-card-inner">
+              <div class="about-avatar" aria-hidden="true">
+                <img src="portrait.jpg" alt="Abdullahi Osman Ali" class="about-avatar-img" />
+                <div class="about-avatar-ring" aria-hidden="true"></div>
+              </div>
+              <div class="about-card-text">
+                <p class="about-card-title">About Me</p>
+                <p class="about-card-body">
+                  Hi, I'm <strong>Abdullahi Osman Ali</strong>, a passionate Graphic Designer, Content Creator, Video Editor, Teacher, and Mobile Phone Repair Technician. I create modern digital experiences that help brands stand out while also sharing knowledge through teaching and solving technical problems.
+                </p>
+              </div>
+            </div>
+            <!-- Stats Row -->
+            <div class="about-stats" aria-label="Key statistics">
+              <div class="stat-item">
+                <span class="stat-num" data-target="50" aria-label="50 plus projects">50+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="30" aria-label="30 plus clients">30+</span>
+                <span class="stat-label">Clients</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="5" aria-label="5 plus years">5+</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+              <div class="stat-divider" aria-hidden="true"></div>
+              <div class="stat-item">
+                <span class="stat-num" data-target="8" aria-label="8 specializations">8</span>
+                <span class="stat-label">Skills</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-text -->
+
+        <!-- RIGHT: Image Side -->
+        <div class="hero-image-side" id="hero-image-side" aria-label="Professional portrait">
+
+          <!-- Glow Ring -->
+          <div class="image-glow-ring" aria-hidden="true"></div>
+          <div class="image-glow-ring ring-2" aria-hidden="true"></div>
+
+          <!-- Main Portrait Frame -->
+          <div class="portrait-frame" id="parallaxFrame">
+            <div class="portrait-blob" aria-hidden="true"></div>
+            <div class="portrait-container">
+              <img
+                src="portrait.jpg"
+                alt="Abdullahi Osman Ali — Creative Designer and Digital Professional in a creative workspace"
+                class="portrait-img"
+                id="portrait-img"
+                loading="eager"
+              />
+              <div class="portrait-overlay" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Info Cards around portrait -->
+            <div class="info-card card-top-left" aria-label="Design work indicator">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+              </div>
+              <div>
+                <p class="info-card-label">Creative</p>
+                <p class="info-card-value">Designer</p>
+              </div>
+            </div>
+
+            <div class="info-card card-top-right" aria-label="Video editing indicator">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              </div>
+              <div>
+                <p class="info-card-label">Video</p>
+                <p class="info-card-value">Editor</p>
+              </div>
+            </div>
+
+            <div class="info-card card-bottom-left" aria-label="Teaching indicator">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+              <div>
+                <p class="info-card-label">Certified</p>
+                <p class="info-card-value">Teacher</p>
+              </div>
+            </div>
+
+            <div class="info-card card-bottom-right" aria-label="Phone repair indicator">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              </div>
+              <div>
+                <p class="info-card-label">Phone</p>
+                <p class="info-card-value">Repair Tech</p>
+              </div>
+            </div>
+
+          </div><!-- /portrait-frame -->
+
+          <!-- Decorative Circles -->
+          <div class="deco-circle circle-1" aria-hidden="true"></div>
+          <div class="deco-circle circle-2" aria-hidden="true"></div>
+          <div class="deco-dot-grid" aria-hidden="true"></div>
+
+        </div><!-- /hero-image-side -->
+
+      </div><!-- /hero-content -->
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator" id="scroll-indicator" aria-label="Scroll down to explore">
+        <span class="scroll-text">Scroll</span>
+        <div class="scroll-line" aria-hidden="true">
+          <div class="scroll-line-inner"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ==============================
+         ABOUT SECTION
+         ============================== -->
+    <section class="about-section" id="about" aria-label="About Abdullahi Osman Ali">
+      <div class="section-container">
+
+        <!-- Section Header -->
+        <div class="section-header reveal">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="grad-text">Me</span></h2>
+          <p class="section-subtitle">A multifaceted creative professional passionate about design, education, and technology.</p>
+        </div>
+
+        <div class="about-grid">
+
+          <!-- Left: Image Column -->
+          <div class="about-img-col reveal">
+            <div class="about-img-wrapper">
+              <div class="about-img-blob" aria-hidden="true"></div>
+              <img src="portrait.jpg" alt="Abdullahi Osman Ali" class="about-full-img" />
+              <!-- Experience Badge -->
+              <div class="about-exp-badge">
+                <span class="exp-num">5+</span>
+                <span class="exp-label">Years of Experience</span>
+              </div>
+              <!-- Floating Skill Pill -->
+              <div class="about-skill-pill pill-1">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                Graphic Design
+              </div>
+              <div class="about-skill-pill pill-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                Phone Repair
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Text Column -->
+          <div class="about-text-col reveal">
+            <div class="about-intro-block">
+              <h3 class="about-heading">Creative Designer &amp; Digital Professional</h3>
+              <p class="about-para">
+                Hi, I'm <strong>Abdullahi Osman Ali</strong> — a passionate creative professional based in Somalia. I blend artistry with technology to craft compelling visual identities and digital experiences that help brands stand out in a crowded world.
+              </p>
+              <p class="about-para">
+                Beyond design, I am a dedicated <strong>Teacher</strong> who believes in sharing knowledge, and a skilled <strong>Mobile Phone Repair Technician</strong> who solves real-world technical problems. My unique combination of skills allows me to offer a holistic service that few professionals can match.
+              </p>
+            </div>
+
+            <!-- Skills Progress Bars -->
+            <div class="skills-progress" aria-label="Skill proficiency levels">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-bar-label">Graphic Design</span>
+                  <span class="skill-bar-pct">95%</span>
+                </div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95" style="--bar-color: var(--blue)"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-bar-label">Video Editing</span>
+                  <span class="skill-bar-pct">88%</span>
+                </div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88" style="--bar-color: var(--purple)"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-bar-label">Brand Identity</span>
+                  <span class="skill-bar-pct">92%</span>
+                </div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92" style="--bar-color: var(--cyan)"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-bar-label">Content Creation</span>
+                  <span class="skill-bar-pct">90%</span>
+                </div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90" style="--bar-color: var(--blue)"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-bar-label">Mobile Phone Repair</span>
+                  <span class="skill-bar-pct">85%</span>
+                </div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85" style="--bar-color: var(--purple)"></div></div>
+              </div>
+            </div>
+
+            <!-- Info Grid -->
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <span class="about-info-label">Name</span>
+                <span class="about-info-value">Abdullahi Osman Ali</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Location</span>
+                <span class="about-info-value">Somalia</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Availability</span>
+                <span class="about-info-value avail-green">Open to Work</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Languages</span>
+                <span class="about-info-value">Somali, Arabic, English</span>
+              </div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="about-ctas">
+              <a href="#contact" class="btn btn-primary" id="about-contact-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Hire Me
+              </a>
+              <a href="#" class="btn btn-secondary" id="about-cv-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download CV
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /about-grid -->
+
+        <!-- Services Cards -->
+        <div class="services-row reveal">
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--blue)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+            </div>
+            <h4 class="service-title">Graphic Design</h4>
+            <p class="service-desc">Logos, posters, flyers, social media graphics, and complete brand kits that make businesses unforgettable.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--purple)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            </div>
+            <h4 class="service-title">Video Editing</h4>
+            <p class="service-desc">Professional video cuts, colour grading, motion graphics, and YouTube/social media content production.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--cyan)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h4 class="service-title">Brand Identity</h4>
+            <p class="service-desc">End-to-end brand strategy: logo systems, typography, colour palettes, brand guidelines, and visual identity.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--blue)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+            </div>
+            <h4 class="service-title">Teaching</h4>
+            <p class="service-desc">Practical lessons in graphic design, computer skills, and digital tools for individuals and groups.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--purple)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <h4 class="service-title">Phone Repair</h4>
+            <p class="service-desc">Screen replacements, battery swaps, software fixes, and full diagnostics for all major smartphone brands.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="--svc-color:var(--cyan)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </div>
+            <h4 class="service-title">Social Media Design</h4>
+            <p class="service-desc">Scroll-stopping posts, stories, reels thumbnails, and full social media content strategies for any platform.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         PORTFOLIO SECTION
+         ============================== -->
+    <section class="portfolio-section" id="portfolio" aria-label="Portfolio projects">
+      <div class="section-container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+          <p class="section-subtitle">A curated selection of my design, video, and branding work.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filters reveal" role="tablist" aria-label="Filter portfolio by category">
+          <button class="filter-btn active" data-filter="all" role="tab" id="filter-all">All Work</button>
+          <button class="filter-btn" data-filter="design" role="tab" id="filter-design">Graphic Design</button>
+          <button class="filter-btn" data-filter="brand" role="tab" id="filter-brand">Branding</button>
+          <button class="filter-btn" data-filter="video" role="tab" id="filter-video">Video</button>
+          <button class="filter-btn" data-filter="social" role="tab" id="filter-social">Social Media</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolioGrid" role="list">
+
+          <!-- Project 1 -->
+          <article class="portfolio-card reveal" data-category="brand" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-1" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><path d="M40 10L10 25v30l30 15 30-15V25L40 10z" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><path d="M40 10v55M10 25l30 15 30-15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj1-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-purple">Brand Identity</span>
+              <h3 class="portfolio-card-title">Tech Startup Brand Kit</h3>
+              <p class="portfolio-card-desc">Complete visual identity for a technology startup — logo, colours, typography, and brand guidelines.</p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="portfolio-card portfolio-card-wide reveal" data-category="design" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-2" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><rect x="10" y="15" width="60" height="50" rx="4" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><path d="M10 30h60M25 15v15M55 15v15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><circle cx="20" cy="23" r="2" fill="rgba(255,255,255,0.4)"/><circle cx="28" cy="23" r="2" fill="rgba(255,255,255,0.4)"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj2-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-blue">Graphic Design</span>
+              <h3 class="portfolio-card-title">Event Poster Collection</h3>
+              <p class="portfolio-card-desc">Series of vibrant event posters for cultural and educational events, blending modern aesthetics with local identity.</p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="portfolio-card reveal" data-category="social" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-3" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="40" r="28" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><path d="M40 12v56M12 40h56" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><circle cx="40" cy="40" r="10" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj3-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-cyan">Social Media</span>
+              <h3 class="portfolio-card-title">Instagram Content Strategy</h3>
+              <p class="portfolio-card-desc">30-day social media template pack for a lifestyle brand — posts, stories, reels covers, and highlights.</p>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="portfolio-card reveal" data-category="video" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-4" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><polygon points="30,22 62,40 30,58" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="40" r="30" stroke="rgba(255,255,255,0.15)" stroke-width="2"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj4-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-purple">Video Editing</span>
+              <h3 class="portfolio-card-title">Corporate Promo Video</h3>
+              <p class="portfolio-card-desc">Cinematic corporate promotional video with colour grading, motion graphics, and professional sound design.</p>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="portfolio-card portfolio-card-wide reveal" data-category="brand" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-5" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><path d="M20 60l20-40 20 40H20z" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><path d="M26 47h28" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/><circle cx="40" cy="25" r="5" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj5-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-blue">Brand Identity</span>
+              <h3 class="portfolio-card-title">Restaurant Visual Identity</h3>
+              <p class="portfolio-card-desc">Full branding for a local restaurant — logo design, menu layout, packaging, and social media brand kit.</p>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="portfolio-card reveal" data-category="design" role="listitem">
+            <div class="portfolio-card-img">
+              <div class="portfolio-placeholder p-grad-6" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><rect x="15" y="15" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><rect x="43" y="15" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.08)"/><rect x="15" y="43" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.08)"/><rect x="43" y="43" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="rgba(255,255,255,0.12)"/></svg>
+              </div>
+              <div class="portfolio-card-overlay">
+                <div class="portfolio-card-links">
+                  <a href="#" class="port-link" id="proj6-view" aria-label="View project details">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                    View
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-card-body">
+              <span class="portfolio-tag tag-cyan">Graphic Design</span>
+              <h3 class="portfolio-card-title">Educational Infographics</h3>
+              <p class="portfolio-card-desc">A series of educational infographics and teaching materials designed for classroom and digital learning.</p>
+            </div>
+          </article>
+
+        </div><!-- /portfolio-grid -->
+
+        <!-- Load More -->
+        <div class="portfolio-more reveal">
+          <a href="#contact" class="btn btn-secondary" id="btn-load-more">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+            Let's Work Together
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         CONTACT SECTION
+         ============================== -->
+    <section class="contact-section" id="contact" aria-label="Contact Abdullahi Osman Ali">
+      <div class="section-container">
+
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact <span class="grad-text">Me</span></h2>
+          <p class="section-subtitle">Have a project in mind? Let's create something amazing together.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left: Info Column -->
+          <div class="contact-info reveal">
+
+            <div class="contact-info-card">
+              <div class="contact-info-top">
+                <p class="contact-intro-text">
+                  I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of the channels below.
+                </p>
+              </div>
+
+              <div class="contact-details">
+                <a href="mailto:abdullahi@example.com" class="contact-detail-item" id="contact-email">
+                  <div class="contact-detail-icon" style="--cd-color:var(--blue)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Email</span>
+                    <span class="contact-detail-value">abdullahi@example.com</span>
+                  </div>
+                </a>
+                <a href="tel:+252612345678" class="contact-detail-item" id="contact-phone">
+                  <div class="contact-detail-icon" style="--cd-color:var(--purple)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 12a19.79 19.79 0 01-3.07-8.67A2 2 0 012 1.5h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.37A16 16 0 0014.63 17.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7a2 2 0 011.72 2z"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Phone</span>
+                    <span class="contact-detail-value">+252 61 234 5678</span>
+                  </div>
+                </a>
+                <div class="contact-detail-item" id="contact-location">
+                  <div class="contact-detail-icon" style="--cd-color:var(--cyan)">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <span class="contact-detail-label">Location</span>
+                    <span class="contact-detail-value">Somalia</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="contact-social">
+                <p class="contact-social-label">Follow Me</p>
+                <div class="contact-social-links">
+                  <a href="#" class="contact-social-btn" id="cs-twitter" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  </a>
+                  <a href="#" class="contact-social-btn" id="cs-linkedin" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  </a>
+                  <a href="#" class="contact-social-btn" id="cs-instagram" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                  </a>
+                  <a href="#" class="contact-social-btn" id="cs-behance" aria-label="Behance">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-.17 1.35-.5.36-1.07.62-1.72.78-.64.17-1.3.25-2.02.25H0V4.51h6.938v-.007zM3.408 11.44h2.99c.54 0 .99-.12 1.35-.37.36-.25.54-.66.54-1.22 0-.31-.053-.57-.16-.77-.107-.2-.252-.37-.437-.5-.185-.13-.4-.22-.645-.28-.245-.06-.5-.09-.77-.09H3.41v3.22zm0 5.12h3.36c.29 0 .567-.03.83-.09.26-.06.49-.16.69-.3.2-.14.36-.33.48-.57.12-.24.18-.54.18-.9 0-.73-.2-1.24-.6-1.52-.4-.28-.93-.42-1.6-.42H3.41v3.8zm14.12-11.45v1.8h-4.87V5.11h4.87zm2.52 8.63c.3.48.77.72 1.41.72.44 0 .82-.11 1.13-.34.3-.23.5-.47.59-.74h2.34c-.37 1.16-.95 1.99-1.73 2.48-.78.5-1.73.75-2.84.75-.77 0-1.46-.12-2.08-.37-.62-.25-1.15-.6-1.58-1.06-.44-.46-.77-1.01-.99-1.65-.23-.65-.34-1.35-.34-2.12 0-.74.12-1.43.35-2.08.24-.64.58-1.19 1.02-1.65.44-.46.97-.82 1.58-1.08.62-.26 1.3-.39 2.04-.39.82 0 1.54.15 2.16.44.62.29 1.13.69 1.53 1.19.4.5.7 1.08.89 1.73.19.66.26 1.35.22 2.09h-6.96c0 .64.18 1.17.48 1.64zm2.36-4.17c-.26-.43-.67-.64-1.24-.64-.36 0-.65.07-.89.2-.24.13-.43.3-.57.5-.14.2-.24.41-.3.64-.06.22-.09.44-.1.64h3.62c-.1-.56-.26-1.01-.52-1.44z"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /contact-info -->
+
+          <!-- Right: Form Column -->
+          <div class="contact-form-col reveal">
+            <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Full Name</label>
+                  <div class="form-input-wrap">
+                    <svg class="form-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/></svg>
+                    <input type="text" id="form-name" name="name" class="form-input" placeholder="Your full name" required autocomplete="name" />
+                  </div>
+                  <span class="form-error" id="error-name">Please enter your name.</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Email Address</label>
+                  <div class="form-input-wrap">
+                    <svg class="form-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <input type="email" id="form-email" name="email" class="form-input" placeholder="your@email.com" required autocomplete="email" />
+                  </div>
+                  <span class="form-error" id="error-email">Please enter a valid email.</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject" class="form-label">Subject</label>
+                <div class="form-input-wrap">
+                  <svg class="form-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="Project inquiry, collaboration..." required />
+                </div>
+                <span class="form-error" id="error-subject">Please enter a subject.</span>
+              </div>
+              <div class="form-group">
+                <label for="form-service" class="form-label">Service Needed</label>
+                <div class="form-input-wrap form-select-wrap">
+                  <svg class="form-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                  <select id="form-service" name="service" class="form-input form-select">
+                    <option value="">Select a service...</option>
+                    <option value="graphic-design">Graphic Design</option>
+                    <option value="video-editing">Video Editing</option>
+                    <option value="brand-identity">Brand Identity</option>
+                    <option value="content-creation">Content Creation</option>
+                    <option value="social-media">Social Media Design</option>
+                    <option value="phone-repair">Mobile Phone Repair</option>
+                    <option value="teaching">Teaching / Training</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <svg class="form-select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <div class="form-input-wrap form-textarea-wrap">
+                  <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project, timeline, and budget..." rows="5" required></textarea>
+                </div>
+                <span class="form-error" id="error-message">Please write a message.</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+                <svg class="btn-icon-default" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                <svg class="btn-icon-loading" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12a9 9 0 11-6.219-8.56"/></svg>
+                <span class="btn-label">Send Message</span>
+              </button>
+
+              <!-- Success Message -->
+              <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <div>
+                  <strong>Message sent successfully!</strong>
+                  <p>I'll get back to you within 24 hours.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div><!-- /contact-grid -->
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Abdullahi Osman Ali home">
+            <span class="logo-icon">A</span>
+            <span class="logo-text">Abdullahi<span class="logo-accent">.</span></span>
+          </a>
+          <p class="footer-tagline">Designing the future, one pixel at a time.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#about" class="footer-link">About</a>
+          <a href="#portfolio" class="footer-link">Portfolio</a>
+          <a href="#contact" class="footer-link">Contact</a>
+        </nav>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" class="footer-social-link" id="footer-twitter" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="#" class="footer-social-link" id="footer-instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="#" class="footer-social-link" id="footer-linkedin" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 <strong>Abdullahi Osman Ali</strong>. All rights reserved.</p>
+        <p class="footer-made">Designed &amp; built with <span class="footer-heart" aria-label="love">❤</span> in Somalia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Social Links (Fixed) -->
+  <aside class="social-sidebar" aria-label="Social media links">
+    <a href="#" class="social-link" id="social-twitter" aria-label="Twitter profile" title="Twitter">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+    </a>
+    <a href="#" class="social-link" id="social-linkedin" aria-label="LinkedIn profile" title="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="#" class="social-link" id="social-instagram" aria-label="Instagram profile" title="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
+    <a href="#" class="social-link" id="social-behance" aria-label="Behance profile" title="Behance">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-.17 1.35-.5.36-1.07.62-1.72.78-.64.17-1.3.25-2.02.25H0V4.51h6.938v-.007zM3.408 11.44h2.99c.54 0 .99-.12 1.35-.37.36-.25.54-.66.54-1.22 0-.31-.053-.57-.16-.77-.107-.2-.252-.37-.437-.5-.185-.13-.4-.22-.645-.28-.245-.06-.5-.09-.77-.09H3.41v3.22zm0 5.12h3.36c.29 0 .567-.03.83-.09.26-.06.49-.16.69-.3.2-.14.36-.33.48-.57.12-.24.18-.54.18-.9 0-.73-.2-1.24-.6-1.52-.4-.28-.93-.42-1.6-.42H3.41v3.8zm14.12-11.45v1.8h-4.87V5.11h4.87zm2.52 8.63c.3.48.77.72 1.41.72.44 0 .82-.11 1.13-.34.3-.23.5-.47.59-.74h2.34c-.37 1.16-.95 1.99-1.73 2.48-.78.5-1.73.75-2.84.75-.77 0-1.46-.12-2.08-.37-.62-.25-1.15-.6-1.58-1.06-.44-.46-.77-1.01-.99-1.65-.23-.65-.34-1.35-.34-2.12 0-.74.12-1.43.35-2.08.24-.64.58-1.19 1.02-1.65.44-.46.97-.82 1.58-1.08.62-.26 1.3-.39 2.04-.39.82 0 1.54.15 2.16.44.62.29 1.13.69 1.53 1.19.4.5.7 1.08.89 1.73.19.66.26 1.35.22 2.09h-6.96c0 .64.18 1.17.48 1.64zm2.36-4.17c-.26-.43-.67-.64-1.24-.64-.36 0-.65.07-.89.2-.24.13-.43.3-.57.5-.14.2-.24.41-.3.64-.06.22-.09.44-.1.64h3.62c-.1-.56-.26-1.01-.52-1.44z"/></svg>
+    </a>
+    <div class="social-line" aria-hidden="true"></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
