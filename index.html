@@ -153,8 +153,8 @@
               Brand Identity
             </div>
             <div class="skill-badge badge-purple" role="listitem">
-              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 10-16 0"/><line x1="20" y1="10" x2="22" y2="10"/><line x1="21" y1="9" x2="21" y2="11"/></svg>
-              Freelancer
+              <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Web Developer
             </div>
           </div>
 
@@ -480,6 +480,7 @@
         <!-- Filter Tabs -->
         <div class="portfolio-filters reveal" role="tablist" aria-label="Filter portfolio by category">
           <button class="filter-btn active" data-filter="all" role="tab" id="filter-all">All Work</button>
+          <button class="filter-btn" data-filter="dev" role="tab" id="filter-dev">Development</button>
           <button class="filter-btn" data-filter="design" role="tab" id="filter-design">Graphic Design</button>
           <button class="filter-btn" data-filter="brand" role="tab" id="filter-brand">Branding</button>
           <button class="filter-btn" data-filter="video" role="tab" id="filter-video">Video</button>
@@ -490,14 +491,17 @@
         <div class="portfolio-grid" id="portfolioGrid" role="list">
 
           <!-- Project 1 -->
-          <article class="portfolio-card reveal" data-category="brand" role="listitem">
+          <article class="portfolio-card reveal" data-category="dev" role="listitem">
             <div class="portfolio-card-img">
               <div class="portfolio-placeholder p-grad-1" aria-hidden="true">
-                <svg viewBox="0 0 80 80" fill="none"><path d="M40 10L10 25v30l30 15 30-15V25L40 10z" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><path d="M40 10v55M10 25l30 15 30-15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/></svg>
+                <svg viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="30" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="rgba(255,255,255,0.05)"/>
+                  <path d="M40 26v28M26 40h28" stroke="rgba(59,130,246,0.8)" stroke-width="6" stroke-linecap="round"/>
+                </svg>
               </div>
               <div class="portfolio-card-overlay">
                 <div class="portfolio-card-links">
-                  <a href="#" class="port-link" id="proj1-view" aria-label="View project details">
+                  <a href="https://github.com/irroabbdullhi/portfolio" class="port-link" id="proj1-view" aria-label="View project details" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     View
                   </a>
@@ -505,9 +509,9 @@
               </div>
             </div>
             <div class="portfolio-card-body">
-              <span class="portfolio-tag tag-purple">Brand Identity</span>
-              <h3 class="portfolio-card-title">Tech Startup Brand Kit</h3>
-              <p class="portfolio-card-desc">Complete visual identity for a technology startup — logo, colours, typography, and brand guidelines.</p>
+              <span class="portfolio-tag tag-blue">Web Application</span>
+              <h3 class="portfolio-card-title">Wellness Pharmacy Management System</h3>
+              <p class="portfolio-card-desc">Precision tracking, automated inventory control, prescription tracking, and secure role-based logins for pharmacy operations.</p>
             </div>
           </article>
 
@@ -600,14 +604,19 @@
           </article>
 
           <!-- Project 6 -->
-          <article class="portfolio-card reveal" data-category="design" role="listitem">
+          <article class="portfolio-card reveal" data-category="dev" role="listitem">
             <div class="portfolio-card-img">
               <div class="portfolio-placeholder p-grad-6" aria-hidden="true">
-                <svg viewBox="0 0 80 80" fill="none"><rect x="15" y="15" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.05)"/><rect x="43" y="15" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.08)"/><rect x="15" y="43" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.3)" stroke-width="2" fill="rgba(255,255,255,0.08)"/><rect x="43" y="43" width="22" height="22" rx="2" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="rgba(255,255,255,0.12)"/></svg>
+                <svg viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="30" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="rgba(255,255,255,0.05)"/>
+                  <path d="M25 28h8l8 24h20l6-16H36" stroke="rgba(6,182,212,0.8)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="43" cy="58" r="4" fill="rgba(255,255,255,0.8)"/>
+                  <circle cx="57" cy="58" r="4" fill="rgba(255,255,255,0.8)"/>
+                </svg>
               </div>
               <div class="portfolio-card-overlay">
                 <div class="portfolio-card-links">
-                  <a href="#" class="port-link" id="proj6-view" aria-label="View project details">
+                  <a href="https://github.com/irroabbdullhi/portfolio" class="port-link" id="proj6-view" aria-label="View project details" target="_blank" rel="noopener">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                     View
                   </a>
@@ -615,9 +624,9 @@
               </div>
             </div>
             <div class="portfolio-card-body">
-              <span class="portfolio-tag tag-cyan">Graphic Design</span>
-              <h3 class="portfolio-card-title">Educational Infographics</h3>
-              <p class="portfolio-card-desc">A series of educational infographics and teaching materials designed for classroom and digital learning.</p>
+              <span class="portfolio-tag tag-cyan">E-Commerce</span>
+              <h3 class="portfolio-card-title">LocalTrade Community Marketplace</h3>
+              <p class="portfolio-card-desc">A modern e-commerce web platform connecting local artisans with buyers, featuring category searches, carts, and vendor management.</p>
             </div>
           </article>
 

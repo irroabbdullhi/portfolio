@@ -123,7 +123,7 @@
     'Brand Architect',
     'Phone Repair Tech',
     'Social Media Pro',
-    'Freelancer',
+    'Web Developer',
   ];
 
   let roleIdx = 0;
